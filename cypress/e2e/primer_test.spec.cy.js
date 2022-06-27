@@ -7,5 +7,9 @@ describe('Carga la pagina principal', () => {
     cy.contains('[data-cy="titulo-proyecto"]','Administrador de Pacientes de Veterinaria');
     //verificar que existe
     cy.get('[data-cy="titulo-proyecto"]').should('exist');
+    //verificar que exista el elemento y contenga un texto prueba y lo que se debe de ver
+    cy.get('[data-cy="titulo-proyecto"]')
+    .invoke('text')
+    .should('equal','Administrador de Pacientes de Veterinaria')
   });
 });
