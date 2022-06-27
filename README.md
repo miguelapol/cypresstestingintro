@@ -1,4 +1,4 @@
-# cypresstestingintro
+# cypress testing intro
 <p>En esta parte veremos el uso de cypress para el testing esta parte de lo que ve el usuario</p>
 <br>
 <p>aqui vemos la primera prueba hecha donde busca el h1 con palabras claves del index</p>
