@@ -11,7 +11,7 @@ describe('Carga la pagina principal', () => {
     cy.get('[data-cy=alerta]')
     .invoke('text')
     .should('equal','Todos los campos son Obligatorios')
-
+    // se verifica que tenga alerta
     cy.get('[data-cy=alerta]')
     .should('have.class','alert-danger')
      
