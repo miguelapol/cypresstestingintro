@@ -6,5 +6,11 @@ describe('Carga la pagina principal', () => {
     
       cy.get('[data-cy="formulario"]')
         .submit();
+
+    //selecionar alerta 
+    cy.get('[data-cy=alerta]')
+    .invoke('text')
+    .should('equal','Todos los campos son Obligatorios')
+     
     });
   });
