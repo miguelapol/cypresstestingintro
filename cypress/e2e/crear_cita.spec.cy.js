@@ -21,6 +21,13 @@ describe('Carga la pagina principal test de creacion', () => {
      cy.get('[data-cy="citas-heading"]')
      .invoke('text')
      .should('equal','Administra tus Citas')
+     cy.get('[data-cy="alerta"]')
+     .invoke('text')
+     .should('equal','Se agregó correctamente')
+
+     cy.get('[data-cy="alerta"]')
+     .should('have.class','alert-success')
+    
     
     });
   });
