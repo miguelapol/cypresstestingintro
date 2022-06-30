@@ -1,7 +1,7 @@
 ///<reference types="cypress"/>
 
-describe('Carga la pagina principal test de creacion', () => {
-    it('carga la página principal', () => {
+describe('Llena los campos para una nueva cita y la muestra', () => {
+    it('campos nueva cita', () => {
     cy.visit('/index.html');
     cy.get('[data-cy="mascota-input"]')
      .type('Luna');
